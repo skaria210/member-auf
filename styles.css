@@ -44,7 +44,7 @@ body {
 /* Gaya Dasar Kartu (Card) & Efek Melayang (Hover) */
 .info-card, .name-card {
     background-color: #fdffca;
-    text-color: #252502;
+    color: #252502;
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
@@ -55,7 +55,7 @@ body {
 .info-card:hover, .name-card:hover {
     transform: translateY(-5px);
     background-color: #6e8923;
-    text-color: #fbfff2;
+    color: #fbfff2;
 }
 
 /* Bagian Tengah (Avatar & Nama) */
@@ -88,7 +88,7 @@ body {
     width: 50%;
     text-align: center;
     background-color: #fdffca;
-    text-color: #252502;
+    color: #252502;
 }
 
 /* Simulasi Menu Dropdown / Expand untuk Daftar Divisi */
@@ -99,6 +99,7 @@ body {
     margin-top: 10px;
     border-top: 1px solid #94a3b8;
     padding-top: 10px;
+    color: #fbfff2
 }
 
 .divisi-list li {
@@ -108,7 +109,7 @@ body {
 }
 
 .divisi-list li:hover {
-    color: #0284c7;
+    color: #87e925;
     font-weight: bold;
 }
 
