@@ -65,19 +65,17 @@ body {
     flex: 1.2;
 }
 
-.character-avatar img {
+.character-avatar {
     width: 180px;
     height: 250px;
-    /* background: radial-gradient(...) -> Baris ini bisa dihapus atau di-off-kan */
-    border-radius: 16px; /* Bisa disesuaikan bentuk lengkungannya */
-    overflow: hidden;    /* Sangat penting agar foto tidak keluar dari batas kotak */
+    border-radius: 16px;
+    overflow: hidden;    /* Penting supaya foto tidak keluar kotak */
 }
 
-/* Tambahkan aturan ini khusus untuk gambar di dalamnya */
 .character-avatar img {
     width: 100%;
     height: 100%;
-    object-fit: cover;   /* Supaya foto pas memenuhi kotak tanpa gepeng */
+    object-fit: cover;   /* Supaya foto pas memenuhi kotak */
 }
 
 .avatar-placeholder {
