@@ -1,6 +1,6 @@
 /* Pengaturan Umum Halaman */
 body {
-    background-color: #beef8d;
+    background-color: #e8e4c9;
     font-family: 'Arial', Helvetica, sans-serif;
     margin: 0;
     padding: 20px;
@@ -43,7 +43,8 @@ body {
 
 /* Gaya Dasar Kartu (Card) & Efek Melayang (Hover) */
 .info-card, .name-card {
-    background-color: #cbd5e1;
+    background-color: #fdffca;
+    text-color: #252502;
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
@@ -53,7 +54,8 @@ body {
 /* Efek Melayang saat kursor menyentuh kartu */
 .info-card:hover, .name-card:hover {
     transform: translateY(-5px);
-    background-color: #b5c2d3;
+    background-color: #6e8923;
+    text-color: #fbfff2;
 }
 
 /* Bagian Tengah (Avatar & Nama) */
@@ -85,7 +87,8 @@ body {
 .name-card {
     width: 50%;
     text-align: center;
-    background-color: #393a4f
+    background-color: #fdffca;
+    text-color: #252502;
 }
 
 /* Simulasi Menu Dropdown / Expand untuk Daftar Divisi */
