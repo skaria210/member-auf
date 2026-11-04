@@ -1,0 +1,112 @@
+/* Pengaturan Umum Halaman */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Navigasi Atas (Logo & OSIS) */
+.top-nav {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.badge-logo, .badge-osis {
+    background-color: #cbd5e1;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #334155;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Layout Utama: Dibagi jadi 3 Kolom (Kiri, Tengah, Kanan) */
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 80vh;
+}
+
+/* Kolom Kiri & Kanan */
+.left-info, .right-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+/* Gaya Dasar Kartu (Card) & Efek Melayang (Hover) */
+.info-card, .name-card {
+    background-color: #cbd5e1;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efek Melayang saat kursor menyentuh kartu */
+.info-card:hover, .name-card:hover {
+    transform: translateY(-5px);
+    background-color: #b5c2d3;
+}
+
+/* Bagian Tengah (Avatar & Nama) */
+.center-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 1.2;
+}
+
+.character-avatar {
+    width: 180px;
+    height: 250px;
+    background: radial-gradient(circle, #38bdf8 0%, #0284c7 70%);
+    border-radius: 50% / 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
+}
+
+.avatar-placeholder {
+    font-size: 80px;
+}
+
+.name-card {
+    width: 100%;
+    text-align: center;
+}
+
+/* Simulasi Menu Dropdown / Expand untuk Daftar Divisi */
+.divisi-list {
+    display: none; /* Disembunyikan dulu */
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    border-top: 1px solid #94a3b8;
+    padding-top: 10px;
+}
+
+.divisi-list li {
+    padding: 5px 0;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.divisi-list li:hover {
+    color: #0284c7;
+    font-weight: bold;
+}
+
+/* Efek Expand saat kartu divisi di-hover */
+.dropdown-card:hover .divisi-list {
+    display: block; /* Munculkan daftar saat kursor diarahkan */
+}
