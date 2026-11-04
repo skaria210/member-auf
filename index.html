@@ -1,2 +1,64 @@
-# member-auf
-Website that describe OSMIB member: AUF
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Member - OSMIB</title>
+    <link rel="stylesheet" href="style copy.css">
+</head>
+<body>
+
+    <!-- Bagian Atas: Logo & OSIS -->
+    <header class="top-nav">
+        <div class="badge-logo">Logo</div>
+        <div class="badge-osis">OSIS</div>
+    </header>
+
+    <!-- Konten Utama (Layout Grid / Flexbox) -->
+    <main class="profile-container">
+        
+        <!-- KOLOM KIRI: Info Detail (Divisi, Tanggal Lahir, Kelas) -->
+        <div class="left-info">
+            <div class="info-card">Divisi, peran (ketua/anggota)</div>
+            <div class="info-card">Tanggal lahir</div>
+            <div class="info-card">Kelas</div>
+        </div>
+
+        <!-- BAGIAN TENGAH: Foto / Karakter & Nama di Bawah -->
+        <div class="center-profile">
+            <div class="character-avatar">
+                <!-- Kamu bisa ganti ini dengan tag <img src="foto.png" alt="Foto"> -->
+                <div class="avatar-placeholder">👤</div>
+            </div>
+            <div class="name-card">
+                <h3>Isi: Nama orang</h3>
+                <p>Kategori: card | Efek: Melayang</p>
+            </div>
+        </div>
+
+        <!-- KOLOM KANAN: Kesan Pesan & Navigasi Divisi Lain -->
+        <div class="right-info">
+            <div class="info-card">
+                <h4>Kesan pesan member</h4>
+                <p>Kategori: card</p>
+            </div>
+
+            <!-- Menu Navigasi / Dropdown Divisi Lain -->
+            <div class="info-card dropdown-card">
+                <p class="dropdown-title">Link untuk pergi ke member yang lain ▾</p>
+                <ul class="divisi-list">
+                    <li>1. Div. inti</li>
+                    <li>2. Div. amn</li>
+                    <li>3. Div. ibadah</li>
+                    <li>4. Div. bahasa</li>
+                    <li>5. Div. kebersihan</li>
+                    <li>6. Div. kesehatan olahraga</li>
+                    <li>7. Div. kreatif</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
