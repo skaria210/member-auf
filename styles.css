@@ -65,7 +65,7 @@ body {
     flex: 1.2;
 }
 
-.character-avatar {
+.character-avatar img {
     width: 180px;
     height: 250px;
     /* background: radial-gradient(...) -> Baris ini bisa dihapus atau di-off-kan */
