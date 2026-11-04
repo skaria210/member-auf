@@ -1,6 +1,6 @@
 /* Pengaturan Umum Halaman */
 body {
-    background-color: #227700;
+    background-color: #beef8d;
     font-family: 'Arial', Helvetica, sans-serif;
     margin: 0;
     padding: 20px;
@@ -83,8 +83,9 @@ body {
 }
 
 .name-card {
-    width: 100%;
+    width: 50%;
     text-align: center;
+    background-color: #393a4f
 }
 
 /* Simulasi Menu Dropdown / Expand untuk Daftar Divisi */
