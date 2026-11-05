@@ -6,6 +6,27 @@ body {
     padding: 20px;
 }
 
+body {
+    /* Masukkan nama file gambar kamu di dalam tanda kurung url('') */
+    background-image: url('aespa-LEMONADE-THE2ND-ALBUM-CORE.png');
+    
+    /* Supaya gambarnya tidak berulang-ulang memenuhi layar */
+    background-repeat: no-repeat;
+    
+    /* Supaya gambar otomatis menutupi seluruh layar secara pas */
+    background-size: cover;
+    
+    /* Supaya posisi gambar pas berada di tengah-tengah layar */
+    background-position: center;
+    
+    /* Supaya background-nya tetap diam (tidak ikutscroll) saat halaman digulir ke bawah */
+    background-attachment: fixed;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
 /* Navigasi Atas (Logo & OSIS) */
 .top-nav {
     display: flex;
