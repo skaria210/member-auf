@@ -49,6 +49,9 @@ body {
     border-radius: 16px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, background-color 0.3s ease;
+    outline-width: 2px;
+    outline-color: #252502;
+    outline-style: solid;
 }
 
 /* Efek Melayang saat kursor menyentuh kartu */
@@ -56,6 +59,9 @@ body {
     transform: translateY(-5px);
     background-color: #6e8923;
     color: #fbfff2;
+     outline-width: 2px;
+    outline-color: #fdffca;
+    outline-style: solid;
 }
 
 /* Bagian Tengah (Avatar & Nama) */
@@ -65,6 +71,9 @@ body {
     align-items: center;
     gap: 20px;
     flex: 1.2;
+    outline-width: 2px;
+    outline-color: #252502;
+    outline-style: solid;
 }
 
 .character-avatar {
