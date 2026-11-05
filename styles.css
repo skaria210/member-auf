@@ -1,11 +1,3 @@
-/* Pengaturan Umum Halaman */
-body {
-    background-color: #e8e4c9;
-    font-family: 'Arial', Helvetica, sans-serif;
-    margin: 0;
-    padding: 20px;
-}
-
 body {
     /* Masukkan nama file gambar kamu di dalam tanda kurung url('') */
     background-image: url('aespa-LEMONADE-THE2ND-ALBUM-CORE.png');
