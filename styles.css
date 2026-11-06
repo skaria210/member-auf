@@ -234,11 +234,8 @@ body {
 
 /* Styling Kotak Kartu yang Bisa Diklik (Link <a>) */
 .card-node {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
     padding: 12px 18px;
     text-decoration: none;
-    color: #1e293b;
     display: inline-block;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -246,32 +243,27 @@ body {
     min-width: 110px;
 }
 
+.card-node {
+    /* Gradasi putih transparan */
+    background: linear-gradient(to bottom, rgba(226, 251, 206, 1), rgba(227, 239, 38, 1), rgba(7, 102, 83, 1));
+    backdrop-filter: blur(8px); /* Efek blur ala kaca */
+    border: 1px solid rgba(12, 24, 5, 1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Saat di-hover warnanya berubah gradasinya */
+.card-node:hover {
+    background: linear-gradient(to bottom, #e2fbce 42%, #e3ef26 29%, #076653 29%);
+    transform: translateY(-4px);
+}
+
 .card-node strong {
     display: block;
     font-size: 14px;
-    color: #0284c7;
+    color: #0c342c;
 }
 
 .card-node span {
     font-size: 12px;
-    color: #64748b;
-}
-
-/* Efek Hover (Saat Kursor Mengarah ke Kotak) */
-.card-node:hover {
-    background: #f0f9ff;
-    border-color: #0284c7;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.15);
-}
-
-/* Pembeda Warna Khusus Ketua & BPH */
-.card-node.ketua {
-    background: #e0f2fe;
-    border-color: #38bdf8;
-}
-
-.card-node.bph {
-    background: #f0fdf4;
-    border-color: #4ade80;
+    color: #06231d;
 }
