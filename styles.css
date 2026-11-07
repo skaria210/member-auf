@@ -1,6 +1,6 @@
 body {
     /* Menggabungkan efek transparan gelap dengan gambar aslimu */
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('aura.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('background1.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -17,11 +17,11 @@ body {
 }
 
 .badge-logo, .badge-osis {
-    background-color: #cbd5e1;
+    background-color: #06402b;
     padding: 10px 20px;
     border-radius: 20px;
     font-weight: bold;
-    color: #334155;
+    color: #d0c0f0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 header.top-nav img {
