@@ -24,7 +24,10 @@ body {
     color: #334155;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
-
+header.top-nav img {
+    width: 75px; /* Ubah angka ini sesuai selera (misal 60px - 90px) */
+    height: auto;
+}
 /* Layout Utama: Dibagi jadi 3 Kolom (Kiri, Tengah, Kanan) */
 .profile-container {
     display: flex;
@@ -266,4 +269,20 @@ body {
 .card-node span {
     font-size: 12px;
     color: #06231d;
+}
+.card-node {
+    /* Membuat background gradasinya lebih besar dari ukuran kotaknya */
+    background: linear-gradient(to bottom, #e2fbce 42%, #e3ef26 29%, #076653 29%);
+    background-size: 200% auto;
+    border: 0.5px solid #0c1805;
+    transition: background-position 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Saat kursor diarahkan ke kotak */
+.card-node:hover {
+    /* Menggeser posisi gradasi warnanya */
+    background-position: right center;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(12, 52, 44, 0.15);
+    border-color: #0c1805;
 }
