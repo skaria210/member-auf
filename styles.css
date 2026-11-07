@@ -1,6 +1,6 @@
 body {
     /* Menggabungkan efek transparan gelap dengan gambar aslimu */
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('aespa-LEMONADE-THE-2ND-ALBUM-CORE.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('aura.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
