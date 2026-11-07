@@ -105,71 +105,27 @@ header.top-nav img {
     background-color: #fdffca;
     color: #252502;
 }
-
-/* Simulasi Menu Dropdown / Expand untuk Daftar Divisi */
-.divisi-list {
-    display: none; /* Disembunyikan dulu */
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-    border-top: 1px solid #94a3b8;
-    padding-top: 10px;
-    color: #fbfff2
+/* Layout Utama */
+body {
+    background-color: #0f172a; /* Warna background gelap estetik */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #ffffff;
 }
 
-.divisi-list li {
-    padding: 5px 0;
-    font-size: 0.9rem;
-    cursor: pointer;
-}
-
-.divisi-list li:hover {
-    color: #87e925;
-    font-weight: bold;
-}
-
-/* Efek Expand saat kartu divisi di-hover */
-.dropdown-card:hover .divisi-list {
-    display: block; /* Munculkan daftar saat kursor diarahkan */
-}
-
-/* Efek dasar untuk daftar nama sub-divisi yang tersembunyi */
-.sub-divisi .divisi-list {
-    max-height: 0;          /* Awalnya tinggi ditutup jadi 0 */
-    opacity: 0;             /* Dibuat transparan */
-    overflow: hidden;       /* Menyembunyikan teks yang meluber */
-    transition: max-height 0.4s ease, opacity 0.3s ease; /* Bikin animasi jadi lembut/smooth */
-    list-style-type: disc;
-    padding-left: 20px;
-    margin: 5px 0 15px 0;
-}
-
-/* Saat kursor diarahkan ke masing-masing sub-divisi, dia akan membuka secara halus */
-.sub-divisi:hover .divisi-list {
-    max-height: 300px;      /* Sesuaikan angka ini dengan perkiraan panjang list namanya */
-    opacity: 1;             /* Muncul perlahan */
-}
-
-/* Biar kursor berubah jadi bentuk tangan saat menyentuh judul divisi */
-.sub-title {
-    cursor: pointer;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-/* Container Utama Diagram Alur */
 .tree-container {
     text-align: center;
-    padding: 30px 10px;
-    overflow-x: auto; /* Biar bisa di-scroll mendatar kalau layarnya sempit */
+    padding: 20px;
+    overflow-x: auto; /* Biar bisa di-scroll samping kalau layar HP/Laptop sempit */
 }
 
 .tree-title {
-    color: #0369a1;
+    color: #e2e8f0;
     margin-bottom: 30px;
 }
 
-/* Menyembunyikan titik bullet pada list */
+/* Menghilangkan List Style */
 .tree ul {
     padding-top: 20px; 
     position: relative;
@@ -177,23 +133,23 @@ header.top-nav img {
     justify-content: center;
     list-style-type: none;
     padding-left: 0;
+    margin: 0;
 }
 
 .tree li {
-    float: left; 
     text-align: center;
     list-style-type: none;
     position: relative;
-    padding: 20px 8px 0 8px;
+    padding: 20px 6px 0 6px;
 }
 
-/* Membuat Garis Penghubung (Verikal & Horizontal) */
+/* Garis Penghubung Alur (Bagan Tree) */
 .tree li::before, .tree li::after {
     content: '';
     position: absolute; 
     top: 0; 
     right: 50%;
-    border-top: 2px solid #cbd5e1;
+    border-top: 2px solid #64748b;
     width: 50%; 
     height: 20px;
 }
@@ -201,7 +157,7 @@ header.top-nav img {
 .tree li::after {
     right: auto; 
     left: 50%;
-    border-left: 2px solid #cbd5e1;
+    border-left: 2px solid #64748b;
 }
 
 .tree li:only-child::after, .tree li:only-child::before {
@@ -217,7 +173,7 @@ header.top-nav img {
 }
 
 .tree li:last-child::before {
-    border-right: 2px solid #cbd5e1;
+    border-right: 2px solid #64748b;
     border-radius: 0 5px 0 0;
 }
 
@@ -230,59 +186,87 @@ header.top-nav img {
     position: absolute; 
     top: 0; 
     left: 50%;
-    border-left: 2px solid #cbd5e1;
+    border-left: 2px solid #64748b;
     width: 0; 
     height: 20px;
 }
 
-/* Styling Kotak Kartu yang Bisa Diklik (Link <a>) */
+/* Desain Dasar Kotak Kartu Node */
 .card-node {
-    padding: 12px 18px;
+    display: block;
     text-decoration: none;
-    display: inline-block;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    padding: 8px 12px;
+    min-width: 130px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     transition: all 0.3s ease;
-    min-width: 110px;
+    box-sizing: border-box;
 }
 
-.card-node {
-    /* Gradasi putih transparan */
-    background: linear-gradient(to bottom, rgba(226, 251, 206, 1), rgba(227, 239, 38, 1), rgba(7, 102, 83, 1));
-    backdrop-filter: blur(8px); /* Efek blur ala kaca */
-    border: 1px solid rgba(12, 24, 5, 1);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+/* Warna Gradasi Hijau-Kuning Pengurus Inti (Sesuai Gambar) */
+.card-node.inti-gold {
+    background: linear-gradient(180deg, #a3e635 0%, #15803d 100%);
+    border: 2px solid #fef08a;
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
-/* Saat di-hover warnanya berubah gradasinya */
-.card-node:hover {
-    background: linear-gradient(to bottom, #e2fbce 42%, #e3ef26 29%, #076653 29%);
-    transform: translateY(-4px);
-}
-
-.card-node strong {
+.card-node.inti-gold strong {
     display: block;
     font-size: 14px;
-    color: #0c342c;
+    color: #ffffff;
 }
 
-.card-node span {
+.card-node.inti-gold span {
+    font-size: 11px;
+    color: #fef9c3;
+}
+
+/* Kotak Divisi & Anggota Menumpuk ke Bawah */
+.divisi-row {
+    margin-top: 10px;
+}
+
+.divisi-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-node.divisi-head {
+    background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+    border: 2px solid #94a3b8;
+    color: #f8fafc;
+    margin-bottom: 10px;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.card-node.member {
+    background: #1e293b;
+    border: 1px solid #475569;
+    color: #cbd5e1;
     font-size: 12px;
-    color: #06231d;
-}
-.card-node {
-    /* Membuat background gradasinya lebih besar dari ukuran kotaknya */
-    background: linear-gradient(to bottom, #e2fbce 42%, #e3ef26 29%, #076653 29%);
-    background-size: 200% auto;
-    border: 0.5px solid #0c1805;
-    transition: background-position 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 6px 8px;
 }
 
-/* Saat kursor diarahkan ke kotak */
+/* Efek Animasi Gradasi Saat Kursor Menempel (Hover) */
 .card-node:hover {
-    /* Menggeser posisi gradasi warnanya */
-    background-position: right center;
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(12, 52, 44, 0.15);
-    border-color: #0c1805;
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(163, 230, 53, 0.4);
+}
+
+.card-node.member:hover {
+    background: linear-gradient(135deg, #334155 0%, #0284c7 100%);
+    border-color: #38bdf8;
+    color: #ffffff;
 }
