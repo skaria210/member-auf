@@ -70,6 +70,25 @@ header.top-nav img {
     outline-style: solid;
 }
 
+.card {
+  width: 320px;          /* Lebar card dibuat tetap agar rapi */
+  height: auto;          /* Tinggi otomatis mengikuti isi */
+  padding: 24px;         /* Jarak dalam */
+  background-color: #ffffd0; /* Warna kuning lembut seperti di desain */
+  border-radius: 16px;   /* Membuat sudutnya melengkung */
+  box-sizing: border-box; /* Agar padding tidak merusak lebar total */
+}
+
+.card h3 {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
 /* Bagian Tengah (Avatar & Nama) */
 .center-profile {
     display: flex;
