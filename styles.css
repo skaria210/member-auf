@@ -285,7 +285,7 @@ body {
 }
 
 .card-node.member:hover {
-    background: linear-gradient(135deg, #334155 0%, #0284c7 100%);
+    background: linear-gradient(135deg, #335255 0%, #02c7a6 100%);
     border-color: #38bdf8;
     color: #ffffff;
 }
